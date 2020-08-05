@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>Sohee's test blog</title>
+	</head>
+	<body>
+		<div>
+            <h1><a href="">Django Girls Blog</a></h1>
+        </div>
+
+        {% for post in posts %}
+        	<div>
+        		<p>published: {{ post.published_date }}</p>
+        		<h1><a href="">{{ post.title }}</a></h1>
+        		<p>{{ post.text|linebreaksbr}}</p>
+        	</div>
+        {% endfor %}
+		<!-- <div>
+			<p>published: 2020.08.03, 12:14</p>
+			<h2><a href="">첫번째 포스트</a></h2>
+			<p> 첫번째 포스트의 내용. 블라블라 아무말 이게 무슨 소리야.</p>
+		</div>
+
+		<div>
+			<p>published: 2020.08.05, 16:35</p>
+			<h2><a href="">두번째 포스트</a></h2>
+			<p> 두번째 포스트 내용 왜 아무도 행아웃을 안 켜지 오늘 온라인 모각코 하는 거 아녔나...</p>
+		</div> -->
+	
+	</body>
+</html>
